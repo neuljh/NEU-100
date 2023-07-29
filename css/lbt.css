@@ -1,0 +1,101 @@
+
+/*整体去除内外边距*/
+* {
+    margin: 0;
+    padding:0;
+}
+/*取消列表的图标内容*/
+ul{
+    list-style: none;
+}
+/*对整体部分的控制，浏览图片的窗口*/
+.banner{
+    width: 800px;
+    height: 600px;
+    border: 2px solid #ccc;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+/*图片的初步设置后面的动态内容会在js中实现*/
+/* .banner .img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+} */
+
+.banner .imgs{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+
+/*让没长图片向左浮动*/
+.img li{
+    float: left;
+}
+/*圆点承载部分的设计*/
+.num{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+/*圆点设计*/
+.num li{
+    width: 10px;
+    height: 10px;
+    background:rgba(0,0,0,0.5);
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/*按钮部分初始不可见*/
+.btn{
+    display: none;
+}
+/*按钮形状设计*/
+.btn span{
+    display: block;
+    width: 50px;
+    height: 100px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    cursor:pointer;
+}
+/*上一个设计*/
+.btn .prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -50px;
+}
+/*下一个设计*/
+.btn .next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+}
+/*对按妞动态呈现的变换进行类选择器的设计为js代码部分进行铺垫*/
+.num .active{
+    background-color: #fff;
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/* line 12, ../sass/ynau.scss */
+* {
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+/* line 15, ../sass/ynau.scss */
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* line 19, ../sass/ynau.scss */
+.navigation {
+    background-color: #31394d;
+    border-bottom: 2px solid #262d3c;
+    padding-left: 2%;
+    background-image: url("nav.png");
+}
+
+p,h1{
+    color: #ece7df;
+}
+
+/* line 23, ../sass/ynau.scss */
+.navigation #menuTextLeft {
+    color: #ece7df;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 200;
+    transition: 0.3s;
+}
+
+/* line 29, ../sass/ynau.scss */
+.navigation #menuTextLeft:hover {
+    background-color: #fc4053;
+    transform: scale(1.1);
+}
+
+/* line 37, ../sass/ynau.scss */
+.navbar-nav li a {
+    padding-bottom: 0;
+    padding-top: 1px;
+}
+
+/* line 44, ../sass/ynau.scss */
+.intro-header {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #ff0000;
+    /*opacity:0.7;*/
+    background-image: url("bg.png");
+    background-size: 100% 100%;
+}
+
+/* .dim{
+    opacity:0.6; filter: alpha(opacity=60);
+} */
+.header-gif{
+    text-align: center;
+    background-size: 100% 100%;
+    height: 120%;
+}
+   
+.dimback{
+    background:rgba(43, 42, 42, 0.525);
+    border-radius:15px;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* line 55, ../sass/ynau.scss */
+.intro-message {
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    /*color: #000000;*/
+    color: #ece7df;
+}
+
+/* line 60, ../sass/ynau.scss */
+.intro-message h1 {
+    font-size: 50px;
+}
+
+/* line 63, ../sass/ynau.scss */
+.intro-message #xh__photo {
+    width: 142px;
+    -webkit-clip-path: circle(70px at 70px 70px);
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+/* line 69, ../sass/ynau.scss */
+.intro-message h3 {
+    left: 60%;
+    font: bold 200% Consolas, Monaco, monospace;
+    border-right: .1em solid;
+    width: 50ch;
+    /* # of chars */
+    margin: 1em 17%;
+    white-space: nowrap;/*规定段落中的文本不进行换行：*/
+    overflow: hidden;
+    animation: typing 7s steps(23, end), blink-caret 0.1s step-end infinite alternate;
+}
+
+/* line 81, ../sass/ynau.scss */
+img.icon {
+    width: 150px;
+    height: 150px;
+}
+
+/* line 85, ../sass/ynau.scss */
+.intro_p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ece7df;
+    margin-top: 10%;
+    text-shadow: 0 0 1px #eee;
+    transition: 0.2s;
+}
+
+/* line 92, ../sass/ynau.scss */
+.intro_p:hover {
+    transform: scale(1.1);
+}
+
+/* line 97, ../sass/ynau.scss */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* line 105, ../sass/ynau.scss */
+.content-section-a {
+    text-align: center;
+    padding-top: 5%;
+    /* margin-bottom: 5%; */
+    background-image: url("bbgg.jpg");
+    background-size: 100% 100%;
+}
+
+/* line 109, ../sass/ynau.scss */
+.content-section-a h1 {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* line 114, ../sass/ynau.scss */
+.content-section-a i {
+    font-size: 30px;
+}
+
+/* line 117, ../sass/ynau.scss */
+.content-section-a .lead {
+    margin-bottom: 4%;
+}
+
+/* line 121, ../sass/ynau.scss */
+.intro-row {
+    text-align: left;
+    background-color: #1789ce;
+    padding: 1.5em;
+    color: #fafafa;
+}
+
+/* line 126, ../sass/ynau.scss */
+.intro-row h3 {
+    margin-left: 35%;
+    font-size: 22px;
+    font-weight: 100;
+    text-shadow: 0 0 1px #fff;
+}
+
+/* line 131, ../sass/ynau.scss */
+.intro-row h3 span {
+    margin-left: 10%;
+    text-shadow: none;
+    white-space: pre;
+    font-size: 20px;
+}
+
+/* line 139, ../sass/ynau.scss */
+.hobby {
+    background-color: #25e47a;
+}
+
+.culture {
+    background-color: #ff0000;
+}
+
+/* line 143, ../sass/ynau.scss */
+.content-section-b {
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-image: url("bbgg.jpg");
+    background-size: 100% 100%;
+}
+
+/* line 147, ../sass/ynau.scss */
+.content-section-b h1 {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* line 153, ../sass/ynau.scss */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+/* line 159, ../sass/ynau.scss */
+.cf:after {
+    clear: both;
+}
+
+/* line 163, ../sass/ynau.scss */
+.boxes {
+    display: block;
+    width: 44%;
+    height: 320px;
+    background: #fe4;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 2%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ece7df;
+}
+
+/* line 174, ../sass/ynau.scss */
+.boxes .da-image {
+    min-height: 100%;
+    width: 100%;
+}
+
+/* line 179, ../sass/ynau.scss */
+.overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -100%;
+    color: #FFF;
+    background-color: #ffd124;
+    /* background-image: url("bg_pic1.png"); */
+    z-index: 10;
+    text-align: center;
+}
+
+/* line 190, ../sass/ynau.scss */
+.overlay p {
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 80px;
+}
+
+/* line 197, ../sass/ynau.scss */
+.container-imgs {
+    width: 1170px;
+    display: block;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+@keyframes shine {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* line 208, ../sass/ynau.scss */
+.btn-success {
+    animation: 1s shine infinite;
+}
+
+/* line 210, ../sass/ynau.scss */
+.btn-success i {
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+/* line 216, ../sass/ynau.scss */
+.content-section-c, .content-section-d, .content-section-e {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    background-color: #1789ce;
+    color: #fafafa;
+    background-image: url("bbgg.jpg");
+    background-size: 100% 100%;
+}
+
+/* line 222, ../sass/ynau.scss */
+.content-section-c h1, .content-section-d h1, .content-section-e h1 {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* line 226, ../sass/ynau.scss */
+.content-section-c .row, .content-section-d .row, .content-section-e .row {
+    padding-bottom: 3%;
+}
+
+/* line 231, ../sass/ynau.scss */
+.content-section-d {
+    background-color: #1789ce;
+    color: #000;
+}
+
+/* line 235, ../sass/ynau.scss */
+.md-img {
+    transition: 0.2s;
+}
+
+/* line 237, ../sass/ynau.scss */
+.md-img:hover {
+    transform: scale(1.1);
+}
+
+/* line 241, ../sass/ynau.scss */
+.boxes-md {
+    display: block;
+    width: 30%;
+    height: 240px;
+    background: #fe4;
+    
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 1.5%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ece7df;
+}
+
+/* line 252, ../sass/ynau.scss */
+.boxes-md .md-image {
+    min-height: 100%;
+    width: 100%;
+}
+
+/* line 256, ../sass/ynau.scss */
+.boxes-md .overlay-md {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -100%;
+    color: #FFF;
+    background-color: #fdbb2c;
+    /* background-image: url("bg_pic.png"); */
+    z-index: 10;
+    text-align: center;
+}
+
+/* line 267, ../sass/ynau.scss */
+.boxes-md .overlay-md p {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 80px;
+}
+
+/* .all{
+    background-image: url("bbgg.jpg");
+    background-size: 100% 100%;
+} */
+
+/* line 274, ../sass/ynau.scss */
+.content-section-e {
+    background-color: #fdbb2c;
+    color: #000000;
+    min-width: 100px;
+}
+
+/* line 276, ../sass/ynau.scss */
+.content-section-e h1 {
+    margin-bottom: 30px;
+}
+
+/* line 279, ../sass/ynau.scss */
+.content-section-e #lead-1 {
+    margin-left: -60px;
+}
+
+/* line 282, ../sass/ynau.scss */
+.content-section-e i {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+/* line 287, ../sass/ynau.scss */
+.boxes-sm {
+    width: 22%;
+    height: 160px;
+    margin: 1.5%;
+}
+
+/* line 291, ../sass/ynau.scss */
+.boxes-sm .sm-image {
+    min-height: 100%;
+    width: 100%;
+}
+
+/* line 295, ../sass/ynau.scss */
+.boxes-sm .overlay-sm {
+    background-color: #fc4053;
+}
+
+/* line 297, ../sass/ynau.scss */
+.boxes-sm .overlay-sm p {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+
+.img {
+    height: auto;
+    width: auto \9;
+    width: 100%;
+}
